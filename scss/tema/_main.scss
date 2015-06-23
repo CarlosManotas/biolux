@@ -1,0 +1,325 @@
+.titulo{
+	text-align: center;
+	&__unico{
+		color: $color1;
+		font-size: 2.25rem;
+		margin-bottom: .2em;
+	}
+	&__en3{
+		color: $color1;
+		font-size: 1.31rem;
+		margin: 0 0 .2em 0;
+
+	}
+	span{
+		font-size: 4rem;
+		padding: 0 .3em;
+		line-height: 1;
+		color: lighten($color1, 20%);
+	}
+}
+
+/*
+-----------------------------------------BENEFICIOS----------------------------------------------------------
+*/
+.contenedor{
+	position: relative;
+}
+.beneficios{
+	&__img{
+		padding-top: 2em;
+		padding-bottom: 1em;
+		max-width: 75%;
+		height: auto;
+	}
+	&__info{
+		position: absolute;
+		padding: .8em;
+		background: #c6c4c4 ;
+		font-size: 1.125rem;
+		width: 286px;
+		height: 300px;
+		border: 1px solid #c6c4c4;
+		z-index: 20;
+		display:none;
+		border-radius: 6px;
+		line-height: 2;
+
+		top: 11.75em;
+		left:0;
+	}
+	&__img span{
+		border-radius: 50%;
+		background-color: white;
+	}
+}
+.pasos{
+	text-align:center;
+	background: lighten($color1, 30%);
+	font-size: 1.25rem;
+	line-height: 4;
+	margin: 0 1.9em !important;
+
+	&:hover{
+		background: $color1;
+		color: white;
+		cursor: pointer;
+	}
+
+}
+.banner2{
+	position:relative;
+	top:-5px;
+	width:100%;
+	background-color: $color1;
+	height: 118px;
+	margin-top:5em;
+
+	&__p{
+		text-align: center;
+		color: white;
+		font-size: 1.5rem;
+		font-weight: $bold;
+		padding-top: 1.5em;
+	}
+}
+.banner3{
+	position:relative;
+	top:-5px;
+	width:100%;
+	background-color: $color2;
+	height: 118px;
+	margin-top:5em;
+	color:white;
+}
+.triangulo-down-magenta{
+	max-width:2px;
+	max-height:1px;
+	border:20px solid;
+	border-color: $color2 transparent transparent transparent;
+	position:absolute;
+	top:-5px;
+	right: 0;
+	left:0;
+	margin: auto;
+
+}
+.salto{
+	margin-top: 1em;
+	p{
+		font-size: .9rem;
+		margin: 0 3em;
+	}
+}
+/*ESTE ESTILO SIRVE PARA REDONDEAR CUALQUIEL IMAGEN SEA CUADRADA O RECTANGULAR--- ESTE ES EL CONTENEDOR DE LA IMAGEN, NO LA IMAGEN EN SI*/
+.redondear {
+    /* cambia estos dos valores para definir el tamaño de tu círculo */
+    height: 250px;
+    width: 250px;
+    /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50% 50%;  /* ESTE SIRVE PARA MOVER EL EJE DE LA IMAGEN*/
+    border-radius: 50%;
+    background-size: 130% auto;
+    border:2px solid #c6c4c4;
+}
+.titulo__venoso{
+	color: $color1;
+	font-size: 2.25rem;
+	margin-top: 2em;
+	border: 2px solid;
+	border-color: #dddddd transparent transparent transparent;
+	padding: 1em 0 0 0;
+}
+.bloque-gris{
+	background-color: #dddddd;
+	border-radius: 15px;
+	padding: 2em 1em;
+	margin: 0 2em;
+	.redondear{
+		margin-bottom:1.5em;
+		height: 200px;
+    	width: 200px;
+    	background-position: 45% 15%;
+	}
+	p{
+		line-height: 2;
+		padding: 0 1em;
+	}
+}
+
+.side-info{
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: 100% 20%;
+	p{
+		padding-right:17em;
+		padding: 1em 17em 5em 0;
+		line-height: 1.4;
+		font-size: .85rem;
+	}
+}
+.banner-m{
+	&__h2{
+		color:white;
+		font-size: 3.27rem;
+		text-align: left;
+		line-height: .6;
+
+	}
+	&__numeros{
+		color:white;
+		text-align: right;
+		font-size: 3.27rem;
+		margin: .4em 0 0 0; 
+		line-height: 1;
+	}
+	&__horas{
+		text-align: right;
+		line-height: 1;
+	}
+}
+.solucion{
+	&__h2{
+		color: $color2;
+		text-align:center;
+		padding-top:1em;
+		font-size: 2.25rem;
+	}
+	p{
+		text-align: center;
+	}
+}
+
+.ellas__h2{
+	text-align:center;
+	color:white;
+	font-size: 2.56rem;
+	margin:.7em 0 0 0 ;
+}
+
+.testimonio__img,
+.testimonio__img__2,
+.testimonio__img__3{
+	
+
+	margin:3em 0;
+	width:200px;
+	height:200px;
+
+    background-repeat: no-repeat;
+      /* ESTE SIRVE PARA MOVER EL EJE DE LA IMAGEN*/
+    border-radius: 50%;
+    
+    border:2px solid #c6c4c4;	
+}
+.testimonio__img{
+
+	background-size: 100% auto ;
+	background-position: 50% 10%;
+}
+.testimonio__img__2{
+	background-size: 100% auto ;
+	background-position: 50% 10%;
+}
+.testimonio__img__3{
+	background-size: auto 100% ;
+	background-position: 90%;
+}
+
+.testimonio{
+	p{
+		font-size: 1rem;
+		padding: 0 1em;
+	}
+}
+
+/*
+/////////////////////////// BANNER DE PROVALO VOS TAMBIÉN///////////////////////////////////////////////
+*/
+.probalo{
+	top:0;
+	
+	&__h2{
+		color:white;
+		font-size: 2.09rem;
+		margin: .8em 0 0;
+		line-height: 1;
+	}
+	&__hh{
+		color:white;
+		text-align: right;
+		font-size: 3.35rem;
+		margin: 0;
+		line-height: 1;
+	}
+	span{
+		font-size: 1.6rem;
+	}
+	&__p{
+		text-align: right;
+		margin: 0;
+		padding-top: .7em;
+		padding-right:4.5em;
+		font-size: 1.25rem;
+	}
+}
+
+
+.call{
+
+	background-size:  auto 100% ;
+	background-position: 80%;
+	width:330px;
+	height:330px;
+
+    background-repeat: no-repeat;
+    border-radius: 50%;
+
+}
+.magenta{
+	width:100%;
+	background-color: lighten($color2, 20%);
+	padding: 2em 0;
+	margin:0;
+	position:relative;
+}
+
+.banner4{
+	background-color: $color2;
+	position: relative;
+	bottom:0;
+	margin: auto 0;
+	padding: 1em;
+	color:white;
+
+	h3{
+		text-align: right;
+		color:white;
+		font-size: 1.25rem;
+	}
+	p{
+		border-top: 1px solid white;
+		padding-top: .5em;
+		font-size: .6rem;
+		text-align: right;
+	}
+	a{
+		color:#ccc;
+	}
+}
+
+
+/*
+///////////////////////// SOLUCION NATURAL//////////////////////////////////////////
+*/
+.solucion--img{
+	margin-bottom:1.5em;
+	height: 120px;
+    width: 120px;
+    background-position: 50%;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	border-radius: 15px;
+	border: 1px solid #ccc;
+}

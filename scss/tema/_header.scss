@@ -1,0 +1,77 @@
+.cabecera{
+	height: 570px;
+	background-color: $color1;
+
+	@include desde(tablet){
+		background: linear-gradient(
+			transparent 20%, lighten($color1,15%) 20%
+		)
+	}
+	.logo{
+		padding-top: .5em;
+	}
+
+}
+
+.banner1{
+	background-color: $color1;
+	height: 118px;
+	top:-5px;
+	&__h1{
+		position:absolute;
+		color:white;
+		background-color: $color2;
+		padding: .1em .6em;
+		left: 1.9em;
+		top:-4.2em;
+		font-size:2.75rem;
+	}
+	&__h2{
+		color: $color2;
+		font-size: 1.875rem;
+		position:absolute;
+		background-color: rgba(255,255,255,.7);
+		padding: 0 .5em;
+		left: 0;
+		right: 0;
+		margin: auto;
+		top: -2em;
+		font-weight: $bold ;
+		text-align: center;
+	}
+	&__parrafo{
+		color:white;
+		font-size: 1rem;
+		font-weight: $bold;
+		padding-right: 2em;
+		padding-top:.6em;
+	}
+	&__titulo{
+		color:white;
+		text-align: right;
+		font-size: 1.625rem;
+		font-weight: $bold;
+		margin: 0;
+		line-height: 1;
+		padding-top:.6em;
+	}
+	&__titulo2{
+		color:white;
+		text-align: right;
+		font-size: 2.68rem;
+		font-weight: $bold;
+		margin: 0;
+	}
+}
+.triangulo-down{
+	max-width:2px;
+	max-height:1px;
+	border:20px solid;
+	border-color: $color1 transparent transparent transparent;
+	position:absolute;
+	top:-5px;
+	right: 0;
+	left:0;
+	margin: auto;
+
+}

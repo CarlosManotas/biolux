@@ -1,0 +1,121 @@
+.formulario{
+	height: 432px;
+	background:linear-gradient($color2 26.5%, $color3 26.5%);
+	width: auto;
+
+	.llama{
+		color: white;
+		font-size: 1.26rem;
+		text-align: right;
+		font-weight: $bold;
+
+		
+		p{
+			margin: 0 !important;
+			font-size: 1.64rem;
+			font-weight: $bold;
+			line-height: 1.5;
+		}
+
+		span{
+			font-size: 2.6rem;
+			padding:0;
+			font-weight: $bold;
+		}
+
+		@include desde(web){
+			
+			font-size: 2.2rem;
+
+			span{
+				font-size: 3.4rem;
+			}
+		}
+	}
+
+
+	&__nombre,
+	&__email,
+	&__codigo,
+	&__telefono{
+		background-position:calc(100% - 2%); 
+		background-repeat:no-repeat;
+		border-radius: 6px;
+		padding:.3em .4em;
+		margin: .3em .2em;
+	}
+	&__nombre{
+		width: 100%;
+		background-image: url('../img/icon_nombre.png');
+		
+
+	}
+	&__email{
+		width: 100%;
+		background-image: url('../img/icon_email.png');
+	}
+	&__codigo{
+		width: 30%;
+	}
+	&__telefono{
+		width: 66%;
+		padding:.3em .5em !important;
+		margin: .3em 0 !important;
+		background-image: url('../img/icon_telefono.png');
+
+	}
+	&__enviar{
+		width: 100%;
+		padding: .1em .6em .1em .6em;
+		background: $color2;
+		color: #fff;
+		font-size: 2em;
+		border-radius: 10px;
+	}
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+ 	-webkit-appearance: none; 
+ 	margin: 0; 
+}
+[data-tooltip] {
+ position : relative;
+ border-bottom : 1px dotted #09C;
+ }
+[data-tooltip]::before {
+ content : attr(data-tooltip);
+ background-color : rgba(0,0,0,.75);
+ color : white;
+ -webkit-font-smoothing : antialiased;
+ padding : 10px;
+ height : auto;
+ border-radius : 3px;
+ display : none;
+ position : absolute;
+ bottom : 40px;
+ left : calc(100% - 95%);
+ pointer-events : none;
+ z-index : 99;
+ }
+[data-tooltip]:active::before, [data-tooltip]:active::after {
+ display : block;
+ }
+
+
+ /*
+//////////////////////////////FORMULARIO FOOTER///////////////////////////////////
+*/
+
+.formulario2{
+	.formulario__email,
+	.formulario__nombre,
+	.formulario__codigo,
+	.formulario__telefono,
+	.formulario__enviar{
+		margin: 1em 0 0 0 !important;
+	}
+
+	.formulario__enviar{
+		background-color: #3fb82d;
+	}
+}
