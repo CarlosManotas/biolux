@@ -24,6 +24,9 @@
 */
 .contenedor{
 	position: relative;
+	a{
+		text-decoration: none;
+	}
 }
 .beneficios{
 	&__img{
@@ -34,24 +37,19 @@
 	}
 	&__info{
 		position: absolute;
-		padding: .8em;
-		background: #c6c4c4 ;
+		background: rgba(#c6c4c4, .5) ;
 		font-size: 1.125rem;
-		width: 286px;
-		height: 300px;
-		border: 1px solid #c6c4c4;
+		width: 100%;
+		height: 100%;
 		z-index: 20;
 		display:none;
-		border-radius: 6px;
 		line-height: 2;
-
-		top: 11.75em;
-		left:0;
 	}
 	&__img span{
 		border-radius: 50%;
 		background-color: white;
 	}
+
 }
 .pasos{
 	text-align:center;
@@ -69,7 +67,6 @@
 }
 .banner2{
 	position:relative;
-	top:-5px;
 	width:100%;
 	background-color: $color1;
 	height: 118px;
@@ -78,18 +75,27 @@
 	&__p{
 		text-align: center;
 		color: white;
+		font-size: 1em;
+		font-weight: $bold;
+		padding-top: 2em;
+	}
+
+	@include desde(tablet){
+		&__p{
+		text-align: center;
+		color: white;
 		font-size: 1.5rem;
 		font-weight: $bold;
 		padding-top: 1.5em;
+		}
 	}
 }
 .banner3{
 	position:relative;
-	top:-5px;
 	width:100%;
 	background-color: $color2;
 	height: 118px;
-	margin-top:5em;
+	margin-top:3em;
 	color:white;
 }
 .triangulo-down-magenta{
@@ -134,8 +140,9 @@
 .bloque-gris{
 	background-color: #dddddd;
 	border-radius: 15px;
-	padding: 2em 1em;
-	margin: 0 2em;
+	padding: 2em 0;
+	
+	
 	.redondear{
 		margin-bottom:1.5em;
 		height: 200px;
@@ -146,7 +153,13 @@
 		line-height: 2;
 		padding: 0 1em;
 	}
+
+	@include desde(web){
+		padding: 2em 1em;
+		margin: 0 2em;
+	}
 }
+
 
 .side-info{
 	background-size: auto 100%;
@@ -160,31 +173,59 @@
 	}
 }
 .banner-m{
+
+
+
+
 	&__h2{
 		color:white;
-		font-size: 3.27rem;
-		text-align: left;
-		line-height: .6;
+		font-size: 2rem;
+		text-align: center;
+		margin: 0;
 
 	}
 	&__numeros{
 		color:white;
-		text-align: right;
+		text-align: center;
 		font-size: 3.27rem;
-		margin: .4em 0 0 0; 
+		margin: 0; 
 		line-height: 1;
 	}
 	&__horas{
-		text-align: right;
+		text-align: center;
 		line-height: 1;
 	}
+	@include desde(web){
+		&__h2{
+				font-size: 3.27rem;
+				line-height: .6;
+				text-align: left;
+				margin: .8em 0 0 0 ;
+		}
+		&__numeros{
+				color:white;
+				text-align: right;
+				font-size: 3.27rem;
+				margin: .4em 0 0 0; 
+				line-height: 1;
+		}
+		&__horas{
+			text-align: right;
+			line-height: 1;
+		}
+
+	}
+
+
+	
+	
 }
 .solucion{
 	&__h2{
 		color: $color2;
 		text-align:center;
-		padding-top:1em;
 		font-size: 2.25rem;
+		margin-top: .4em;
 	}
 	p{
 		text-align: center;
@@ -194,8 +235,14 @@
 .ellas__h2{
 	text-align:center;
 	color:white;
-	font-size: 2.56rem;
-	margin:.7em 0 0 0 ;
+	margin:.5em 0 0 0 ;
+	font-size:2em;
+
+
+	@include desde(web){
+		font-size: 2.56rem;
+		margin:.7em 0 0 0 ;
+	}
 }
 
 .testimonio__img,
@@ -242,28 +289,52 @@
 	
 	&__h2{
 		color:white;
-		font-size: 2.09rem;
-		margin: .8em 0 0;
+		font-size: 1.8em;
+		margin: 1em 0;
 		line-height: 1;
+		text-align: center;
 	}
 	&__hh{
-		color:white;
-		text-align: right;
+		text-align: center;
 		font-size: 3.35rem;
 		margin: 0;
 		line-height: 1;
 	}
+	&__p{
+		text-align: center;
+		margin: 0;
+		padding-top: .7em;
+		font-size: 1.25rem;
+		color: black;
+	}
+
+
+	@include desde(web){
+
+		&__hh{
+				color:white;
+				text-align: right;
+				font-size: 3.35rem;
+				margin: 0;
+				line-height: 1;
+			}
+		&__p{
+			text-align: right;
+			color:white;
+			padding-right:4.5em;
+		}
+		&__h2{
+			color:white;
+			font-size: 2.09rem;
+			margin: .8em 0 0;
+		}
+	}
+
+
 	span{
 		font-size: 1.6rem;
 	}
-	&__p{
-		text-align: right;
-		margin: 0;
-		padding-top: .7em;
-		padding-right:4.5em;
-		font-size: 1.25rem;
-	}
-}
+}	
 
 
 .call{
@@ -282,7 +353,6 @@
 	background-color: lighten($color2, 20%);
 	padding: 2em 0;
 	margin:0;
-	position:relative;
 }
 
 .banner4{
@@ -323,3 +393,56 @@
 	border-radius: 15px;
 	border: 1px solid #ccc;
 }
+
+
+
+
+
+
+//////////////////////////////lightbox////////////////////////////////////////////////
+
+.lightbox { 
+	display: none;
+	outline: none;
+	position: absolute;
+	top: 0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin: auto auto;
+	text-align:center;
+	background: #222222;
+	height: 100%;	
+	width: 100% ;	
+	box-sizing: content-box;
+	z-index:20;
+	
+
+
+	.contenido-light{
+		width: 50%;
+		height: auto;
+		top: 0;
+		left:0;
+		right:0;
+		bottom:0;
+		margin: auto auto
+	}
+	p{
+		color:rgba(white,.7);
+		font-size: 1.5rem;
+	}
+}
+.close {
+	display: block;
+	top: 0px;
+	right:0px;
+	padding: 2em 2em;
+	color: #FFFFFF;
+	text-decoration:none;
+	font-size: 20px;
+	text-align:right;
+}
+#up1:target { display: block;}
+#up2:target { display: block;}
+#up3:target { display: block;}

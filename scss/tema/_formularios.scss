@@ -119,3 +119,19 @@ input[type=number]::-webkit-outer-spin-button {
 		background-color: #3fb82d;
 	}
 }
+
+///////////////////////////////////FORMULARIO MOVIL//////////////////////////////
+
+.formulario-movil{
+	height:auto;
+	background: $color2 ;
+	text-align:center;
+	color: white;
+	padding:2em 0;
+	p{
+		text-align: center;
+	}
+	.formulario__enviar{
+		background: #3fb82d;
+	}
+}

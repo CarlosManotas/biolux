@@ -1,6 +1,10 @@
 .cabecera{
-	height: 570px;
-	background-color: $color1;
+
+	@include desde-hasta(movil,tablet){
+		height: 570px;
+		background-color: $color1;
+	}
+	
 
 	@include desde(tablet){
 		background: linear-gradient(
@@ -8,16 +12,36 @@
 		)
 	}
 	.logo{
-		padding-top: .5em;
+		padding-top: .7em;
+	}
+	img{
+		bottom:-5px;
 	}
 
 }
 
 .banner1{
 	background-color: $color1;
-	height: 118px;
-	top:-5px;
+	height: auto;
+	padding-bottom:1em;
+
+	@include desde(web){
+		height: 118px;
+		padding-bottom:0;
+	}
+
+
 	&__h1{
+		position:absolute;
+		color:white;
+		background-color: $color2;
+		padding: .1em 1.3em .1em 1.4em;
+		top:-6em;
+	}
+
+	@include desde(web){
+
+		&__h1{
 		position:absolute;
 		color:white;
 		background-color: $color2;
@@ -25,7 +49,9 @@
 		left: 1.9em;
 		top:-4.2em;
 		font-size:2.75rem;
+		}
 	}
+
 	&__h2{
 		color: $color2;
 		font-size: 1.875rem;
@@ -35,10 +61,18 @@
 		left: 0;
 		right: 0;
 		margin: auto;
-		top: -2em;
+		top: -4em;
 		font-weight: $bold ;
 		text-align: center;
 	}
+	@include desde(web){
+
+		&__h2{
+		top: -2em;
+		}
+	}
+
+
 	&__parrafo{
 		color:white;
 		font-size: 1rem;
@@ -69,7 +103,6 @@
 	border:20px solid;
 	border-color: $color1 transparent transparent transparent;
 	position:absolute;
-	top:-5px;
 	right: 0;
 	left:0;
 	margin: auto;
