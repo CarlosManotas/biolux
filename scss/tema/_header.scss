@@ -14,12 +14,18 @@
 	.logo{
 		padding-top: .7em;
 	}
-	img{
-		bottom:-5px;
-	}
 
 }
+.tituloPequeño{
+		font-size: .9em;
+		text-align: center;
+		background:$color1;
+		color:white;
+		padding: .2em 2em;
+		top:-5px;
+		position:relative;
 
+}
 .banner1{
 	background-color: $color1;
 	height: auto;

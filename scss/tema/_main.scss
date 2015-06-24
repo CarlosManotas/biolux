@@ -1,9 +1,18 @@
 .titulo{
 	text-align: center;
+
 	&__unico{
 		color: $color1;
-		font-size: 2.25rem;
+		font-size: 1.6em;
 		margin-bottom: .2em;
+	}
+
+	@include desde(tablet){
+		&__unico{
+			color: $color1;
+			font-size: 2.25rem;
+			margin-bottom: .2em;
+		}
 	}
 	&__en3{
 		color: $color1;
@@ -75,9 +84,9 @@
 	&__p{
 		text-align: center;
 		color: white;
-		font-size: 1em;
+		font-size: .85em;
 		font-weight: $bold;
-		padding-top: 2em;
+		padding-top: 3em;
 	}
 
 	@include desde(tablet){
@@ -112,9 +121,19 @@
 }
 .salto{
 	margin-top: 1em;
+
 	p{
 		font-size: .9rem;
-		margin: 0 3em;
+		text-align: center;
+		padding: 1em 1em;
+	}
+
+	@include desde(tablet){
+
+		p{
+			text-align: left;
+			margin: 0 3em;
+		}
 	}
 }
 /*ESTE ESTILO SIRVE PARA REDONDEAR CUALQUIEL IMAGEN SEA CUADRADA O RECTANGULAR--- ESTE ES EL CONTENEDOR DE LA IMAGEN, NO LA IMAGEN EN SI*/
@@ -326,7 +345,8 @@
 		&__h2{
 			color:white;
 			font-size: 2.09rem;
-			margin: .8em 0 0;
+			margin: .8em 0 0; 
+			text-align: left;
 		}
 	}
 
