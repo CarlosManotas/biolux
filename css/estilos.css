@@ -1927,6 +1927,12 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   .formulario-movil .formulario__enviar {
     background: #3fb82d; }
 
+/* line 1, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden; }
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .cabecera {
     height: 570px;
@@ -1934,11 +1940,11 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 @media screen and (min-width: 768px) {
   .cabecera {
     background: linear-gradient(transparent 20%, #4ec2b9 20%); } }
-/* line 17, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
+/* line 23, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
 .cabecera .logo {
   padding-top: 0.7em; }
 
-/* line 22, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
+/* line 28, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
 .tituloPequeño {
   font-size: 0.9em;
   text-align: center;
@@ -1948,7 +1954,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   top: -5px;
   position: relative; }
 
-/* line 32, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
+/* line 38, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
 .banner1 {
   background-color: #32918a;
   height: auto;
@@ -1957,7 +1963,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     .banner1 {
       height: 118px;
       padding-bottom: 0; } }
-  /* line 43, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
+  /* line 49, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
   .banner1__h1 {
     position: absolute;
     color: white;
@@ -1965,7 +1971,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     padding: 0.1em 1.3em 0.1em 1.4em;
     top: -6em; }
   @media screen and (min-width: 1025px) {
-    /* line 53, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
+    /* line 59, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
     .banner1__h1 {
       position: absolute;
       color: white;
@@ -1975,7 +1981,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
       top: -4.2em;
       font-size: 2.75rem; }
  }
-  /* line 64, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
+  /* line 70, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
   .banner1__h2 {
     color: #ff3d7f;
     font-size: 1.875rem;
@@ -1989,18 +1995,18 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     font-weight: 700;
     text-align: center; }
   @media screen and (min-width: 1025px) {
-    /* line 79, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
+    /* line 85, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
     .banner1__h2 {
       top: -2em; }
  }
-  /* line 85, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
+  /* line 91, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
   .banner1__parrafo {
     color: white;
     font-size: 1rem;
     font-weight: 700;
     padding-right: 2em;
     padding-top: 0.6em; }
-  /* line 92, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
+  /* line 98, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
   .banner1__titulo {
     color: white;
     text-align: right;
@@ -2009,7 +2015,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     margin: 0;
     line-height: 1;
     padding-top: 0.6em; }
-  /* line 101, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
+  /* line 107, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
   .banner1__titulo2 {
     color: white;
     text-align: right;
@@ -2017,7 +2023,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     font-weight: 700;
     margin: 0; }
 
-/* line 109, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
+/* line 115, C:/Users/LLapenda/Desktop/CarlosManotas/maquetaciones/biolux/proyecto/tema/scss/tema/header */
 .triangulo-down {
   max-width: 2px;
   max-height: 1px;
