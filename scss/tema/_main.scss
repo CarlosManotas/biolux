@@ -84,7 +84,7 @@
 	&__p{
 		text-align: center;
 		color: white;
-		font-size: .85em;
+		font-size: .7em;
 		font-weight: $bold;
 		padding-top: 3em;
 	}
@@ -206,10 +206,20 @@
 	&__numeros{
 		color:white;
 		text-align: center;
-		font-size: 3.27rem;
+		font-size: 2em;
 		margin: 0; 
 		line-height: 1;
 	}
+
+	@include desde(tablet){
+
+		&__numeros{
+			font-size: 3.27rem;
+		}
+	}
+
+
+
 	&__horas{
 		text-align: center;
 		line-height: 1;
@@ -255,7 +265,7 @@
 	text-align:center;
 	color:white;
 	margin:.5em 0 0 0 ;
-	font-size:2em;
+	font-size:1.6em;
 
 
 	@include desde(web){
@@ -308,14 +318,14 @@
 	
 	&__h2{
 		color:white;
-		font-size: 1.8em;
+		font-size: 1.4em;
 		margin: 1em 0;
 		line-height: 1;
 		text-align: center;
 	}
 	&__hh{
 		text-align: center;
-		font-size: 3.35rem;
+		font-size: 2rem;
 		margin: 0;
 		line-height: 1;
 	}
