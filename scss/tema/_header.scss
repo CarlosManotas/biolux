@@ -1,8 +1,11 @@
 .cabecera{
 
+
 	@include desde-hasta(movil,tablet){
 		height: 570px;
-		background-color: $color1;
+		background: linear-gradient(
+                 transparent 21%, $color1 21%
+			) 
 	}
 	
 

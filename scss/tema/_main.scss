@@ -337,6 +337,13 @@
 		color: black;
 	}
 
+	@include desde(movil){
+		&__h2{
+			font-size: 2rem;
+			margin:.5em 0;
+		}
+	}
+
 
 	@include desde(web){
 
