@@ -93,8 +93,15 @@
 		&__p{
 		text-align: center;
 		color: white;
-		font-size: 1.5rem;
+		font-size: 1rem;
 		font-weight: $bold;
+		padding-top: 3em;
+		}
+	}
+
+	@include desde(web){
+		&__p{
+		font-size: 1.5rem;
 		padding-top: 1.5em;
 		}
 	}
@@ -216,6 +223,16 @@
 		&__numeros{
 			font-size: 3.27rem;
 		}
+		&__h2{
+			font-size: 2rem;
+			margin-top: 1.2em;
+
+		}
+		&__numeros{
+			font-size: 2.5em;
+			margin-top: 1em; 
+			line-height: 1;
+		}
 	}
 
 
@@ -266,7 +283,13 @@
 	color:white;
 	margin:.5em 0 0 0 ;
 	font-size:1.6em;
+	
 
+	@include desde(tablet){
+
+		font-size: 2rem;
+		margin-top: 1em;
+	}
 
 	@include desde(web){
 		font-size: 2.56rem;
@@ -345,24 +368,39 @@
 	}
 
 
-	@include desde(web){
+	@include desde(tablet){
 
 		&__hh{
 				color:white;
 				text-align: right;
+			}
+		&__p{
+				color:white;
+				text-align: right;
+		}
+		&__h2{
+			color:white;
+			font-size: 1.5em;
+			margin: .8em 0 0;
+		}
+
+	}
+
+
+	@include desde(web){
+
+		&__hh{
+				
 				font-size: 3.35rem;
 				margin: 0;
 				line-height: 1;
 			}
 		&__p{
-			text-align: right;
-			color:white;
+			
 			padding-right:4.5em;
 		}
 		&__h2{
-			color:white;
 			font-size: 2.09rem;
-			margin: .8em 0 0; 
 			text-align: left;
 		}
 	}
@@ -449,6 +487,7 @@
 	z-index:20;
 	top: 0vh;
 
+
 	.contenido-light{
 		width: 50%;
 		height: auto;
@@ -478,15 +517,17 @@
 	text-decoration:none;
 	font-size: 20px;
 	text-align:right;
+	cursor:pointer;
 
 }
 #up1,#up2,#up3{
 	display:none;
+	transition: all 1s ease-in;
 }
 
 #up1:target { display: block; animation: mostrar .8s ease-out;}
-#up2:target { display: block;animation: mostrar .8s ease-out;}
-#up3:target { display: block;animation: mostrar .8s ease-out;}
+#up2:target { display: block; animation: mostrar .8s ease-out;}
+#up3:target { display: block; animation: mostrar .8s ease-out;}
 
 @keyframes mostrar{
 	0% {left:-100vw;}
