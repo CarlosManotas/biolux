@@ -439,22 +439,15 @@
 //////////////////////////////lightbox////////////////////////////////////////////////
 
 .lightbox { 
-	display: none;
 	outline: none;
-	position: absolute;
-	top: 0;
-	left:0;
-	right:0;
-	bottom:0;
-	margin: auto auto;
+	position: fixed;
 	text-align:center;
 	background: #222222;
-	height: 100%;	
-	width: 100% ;	
+	height: 100vh;	
+	width: 100vw;	
 	box-sizing: content-box;
 	z-index:20;
-	
-
+	top: 0vh;
 
 	.contenido-light{
 		width: 50%;
@@ -467,7 +460,13 @@
 	}
 	p{
 		color:rgba(white,.7);
-		font-size: 1.5rem;
+		font-size: 1em;
+	}
+
+	@include desde(tablet){
+		p{
+			font-size: 1.5rem;
+		}
 	}
 }
 .close {
@@ -479,7 +478,17 @@
 	text-decoration:none;
 	font-size: 20px;
 	text-align:right;
+
 }
-#up1:target { display: block;}
-#up2:target { display: block;}
-#up3:target { display: block;}
+#up1,#up2,#up3{
+	display:none;
+}
+
+#up1:target { display: block; animation: mostrar .8s ease-out;}
+#up2:target { display: block;animation: mostrar .8s ease-out;}
+#up3:target { display: block;animation: mostrar .8s ease-out;}
+
+@keyframes mostrar{
+	0% {left:-100vw;}
+	100% {left:0;}
+}
